@@ -1,0 +1,28 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Build folders
+/bin/
+build/
+
+# Go cache
+/go-build/
+*.test
+
+# Env files
+.env
+
+# Logs
+*.log
+
+# IDE files
+.vscode/
+.idea/
+*.code-workspace
+
+# Backup files
+*~
