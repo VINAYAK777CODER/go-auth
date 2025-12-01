@@ -53,8 +53,7 @@ Copy code
 git clone https://github.com/VINAYAK777CODER/go-auth.git
 cd go-auth
 
-yaml
-Copy code
+
 
 ---
 
@@ -62,8 +61,7 @@ Copy code
 
 go mod init github.com/VINAYAK777CODER/go-auth
 
-yaml
-Copy code
+
 
 ---
 
@@ -76,8 +74,7 @@ go get golang.org/x/crypto/bcrypt
 go get -u github.com/golang-jwt/jwt/v5
 go get github.com/joho/godotenv
 
-yaml
-Copy code
+
 
 ---
 
@@ -92,8 +89,7 @@ Run with:
 
 CompileDaemon --build="go build -o go-auth.exe" --command="./go-auth.exe"
 
-yaml
-Copy code
+
 
 ---
 
@@ -105,8 +101,7 @@ PORT=8000
 DB_URL=your_postgres_connection_string
 SECRET=your_jwt_secret
 
-yaml
-Copy code
+
 
 ---
 
@@ -123,15 +118,13 @@ Copy code
 
 go run main.go
 
-cpp
-Copy code
+
 
 Or using auto-reload:
 
 CompileDaemon --command="./go-auth.exe"
 
-yaml
-Copy code
+
 
 ---
 
