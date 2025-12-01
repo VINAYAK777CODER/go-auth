@@ -4,6 +4,7 @@ import (
 	// Importing our initializer functions (LoadEnvVariables, ConnectToDb, SyncDatabase)
 	"github.com/VINAYAK777CODER/go-auth/controllers"
 	"github.com/VINAYAK777CODER/go-auth/initializers"
+	"github.com/VINAYAK777CODER/go-auth/middleware"
 
 	// Importing the Gin framework for building HTTP APIs
 	"github.com/gin-gonic/gin"
@@ -22,6 +23,8 @@ func main() {
     r := gin.Default() // Create a new Gin router with Logger + Recovery middleware
 
    r.POST("/signup",controllers.SignUp)
+   r.POST("/login",controllers.Login)
+   r.GET("/validate",middleware.RequireAuth,controllers.Validate)
 
     r.Run() // Start the server on port 8080 by default
 }
