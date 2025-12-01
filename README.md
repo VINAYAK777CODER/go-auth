@@ -41,8 +41,7 @@ go-auth/
 ├── go.sum
 └── main.go
 
-yaml
-Copy code
+
 
 ---
 
